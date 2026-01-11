@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesion Detection System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Medical Lesion Detection</h1>
+            <p>Upload an MRI image and let the AI model predict the lesion class instantly.</p>
+        </div>
+    </section>
+
+    <!-- UPLOAD SECTION -->
+    <section class="upload-section">
+        <div class="upload-box">
+            <h2>Upload MRI Image</h2>
+            
+            <input type="file" id="imageUpload" accept="image/*">
+            <button id="predictBtn">Predict</button>
+
+            <div id="loader" class="loader hidden"></div>
+
+            <!-- RESULT -->
+            <div id="result" class="result hidden">
+                <img id="previewImg" class="preview hidden" alt="Preview"/>
+                <h3>Prediction Result</h3>
+                <p><strong>Class:</strong> <span id="predClass"></span></p>
+                <p><strong>Confidence:</strong> <span id="predConf"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Medical Lesion Detection System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
